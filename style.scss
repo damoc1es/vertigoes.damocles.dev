@@ -1,0 +1,98 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+    html { font-family: 'Inter var', sans-serif; }
+}
+
+:root {
+    --bg-clr: #182332;
+    --bg-alt: #324966;
+    
+    --clr: white;
+    --clr-dark: #8895a6;
+    --clr-link: #4ad0d2;
+    --link-underline: #ACF8E1;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    background-color: var(--bg-clr);
+    color: var(--clr);
+    font-size: 1.5em;
+    margin: .8em;
+}
+
+#Container {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg-alt);
+    border-radius: 2em;
+    padding: .6em 1.1em;
+    a {
+        border: none;
+    }
+}
+.card {
+    background-color: var(--bg-alt);
+    border-radius: 1em;
+    padding: 1em 1.2em;
+
+    .heading {
+        display: flex;
+        justify-content: space-between;
+        h2 {
+            margin: 0;
+            margin-bottom: .5em;
+        }
+        img {
+            image-rendering: pixelated;
+            width: 60px;
+            height: 60px;
+            filter: drop-shadow(5px 5px 5px #0E1219);
+        }
+    }
+}
+a {
+    color: var(--clr-link);
+    padding-bottom: 2px;
+    border-bottom: 2px var(--link-underline) dashed;
+    text-decoration: none;
+    &:hover {
+        color: var(--link-underline);
+    }
+    // /text-decoration-style: wavy;
+}
+
+.colored {
+    color: var(--clr-link);
+}
+#Logo {
+    max-width: 400px;
+    align-self: center;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    gap: 1.5em;
+}
+ul {
+    margin: 0;
+}
+li {
+    padding-top: .5em;
+}
+h1 {
+    margin: 0;
+}
+
+dt {
+    margin-top: 1em;
+}
